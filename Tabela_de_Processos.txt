@@ -1,0 +1,11 @@
+--- Tabela de Processos do Sistema Operacional ---
+PID: 0   | Estado: PRONTO       | TP: 53     | CP: 54     | N_CPU: 2    | NES: 2   
+PID: 1   | Estado: PRONTO       | TP: 464    | CP: 465    | N_CPU: 2    | NES: 2   
+PID: 2   | Estado: BLOQUEADO    | TP: 262    | CP: 263    | N_CPU: 2    | NES: 2   
+PID: 3   | Estado: BLOQUEADO    | TP: 139    | CP: 140    | N_CPU: 2    | NES: 2   
+PID: 4   | Estado: PRONTO       | TP: 71     | CP: 72     | N_CPU: 1    | NES: 1   
+PID: 5   | Estado: BLOQUEADO    | TP: 352    | CP: 353    | N_CPU: 2    | NES: 2   
+PID: 6   | Estado: PRONTO       | TP: 15     | CP: 16     | N_CPU: 1    | NES: 1   
+PID: 7   | Estado: BLOQUEADO    | TP: 61     | CP: 62     | N_CPU: 1    | NES: 1   
+PID: 8   | Estado: PRONTO       | TP: 66     | CP: 67     | N_CPU: 1    | NES: 1   
+PID: 9   | Estado: PRONTO       | TP: 7      | CP: 8      | N_CPU: 1    | NES: 1   
