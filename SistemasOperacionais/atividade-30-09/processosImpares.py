@@ -53,57 +53,74 @@ def fcfs(processes, file_path="resultados.txt"):
 
 
 # ------------------------------------------------------------
-# Algoritmo 3 - SRTF (Shortest Remaining Time First - preemptivo)
+# Algoritmo 3 - Round Robin - (RR)
 # ------------------------------------------------------------
-def srtf(processes, file_path="resultados.txt"):
+def round_robin(processes, quantum=2, file_path="resultados.txt"):
+    from collections import deque
+
     n = len(processes)
-    # Faz uma cópia da lista com "remaining" (tempo restante)
     procs = [
         {"id": p["id"], "arrival": p["arrival"], "burst": p["burst"],
-         "remaining": p["burst"], "priority": p["priority"]}
+         "remaining": p["burst"], "priority": p["priority"], "finish": 0}
         for p in processes
     ]
 
     time = 0
-    completed = 0
-    order = []    # ordem de execução segundo a linha do tempo
+    queue = deque()
+    order = []
     results = []
+    completed = 0
+
+    # Adiciona processos que chegam em t=0
+    for p in procs:
+        if p["arrival"] == 0:
+            queue.append(p)
 
     while completed < n:
-        # Seleciona todos os processos já chegados
-        available = [p for p in procs if p["arrival"] <= time and p["remaining"] > 0]
-        if available:
-            # Escolhe o que tem menor tempo restante
-            current = min(available, key=lambda x: x["remaining"])
-            order.append(current["id"])   # adiciona à ordem de execução
-            current["remaining"] -= 1     # executa 1 unidade de tempo
-            time += 1
+        if queue:
+            current = queue.popleft()
+            # Se o processo ainda não tinha começado, garantir que o tempo respeite chegada
+            if time < current["arrival"]:
+                time = current["arrival"]
 
-            # Se terminou, calcula tempos
+            exec_time = min(quantum, current["remaining"])
+            order.extend([current["id"]] * exec_time)  # guarda execução no timeline
+            time += exec_time
+            current["remaining"] -= exec_time
+
+            # Adiciona novos processos que chegaram durante essa execução
+            for p in procs:
+                if p["arrival"] <= time and p["remaining"] > 0 and p not in queue and p != current:
+                    queue.append(p)
+
             if current["remaining"] == 0:
-                completed += 1
-                finish_time = time
-                turnaround = finish_time - current["arrival"]
+                current["finish"] = time
+                turnaround = current["finish"] - current["arrival"]
                 waiting = turnaround - current["burst"]
                 results.append({
                     "id": current["id"],
                     "arrival": current["arrival"],
                     "burst": current["burst"],
-                    "finish": finish_time,
+                    "finish": current["finish"],
                     "waiting": waiting,
                     "turnaround": turnaround,
                     "priority": current["priority"]
                 })
+                completed += 1
+            else:
+                queue.append(current)  # ainda tem tempo, volta pro fim da fila
         else:
-            time += 1  # CPU ociosa, avança tempo
+            time += 1
+            # adiciona processos que chegam nesse tempo
+            for p in procs:
+                if p["arrival"] <= time and p["remaining"] > 0 and p not in queue:
+                    queue.append(p)
 
-    # Calcula as médias
     avg_wait = sum(r["waiting"] for r in results) / n
     avg_turn = sum(r["turnaround"] for r in results) / n
 
-    # Escreve no arquivo de saída
     with open(file_path, "a", encoding="utf-8") as f:
-        f.write("SRTF (Shortest Remaining Time First)\n")
+        f.write("Round Robin (Quantum = " + str(quantum) + ")\n")
         f.write("Ordem de Execução (linha do tempo): " + " -> ".join(order) + "\n\n")
         f.write(f"{'Processo':<10}{'Chegada':<10}{'Burst':<8}{'Fim':<8}"
                 f"{'Espera':<8}{'Retorno':<10}{'Prior.':<8}\n")
@@ -201,7 +218,7 @@ if __name__ == "__main__":
 
     # Cada função escreve no mesmo arquivo resultados.txt
     fcfs(process_list)
-    srtf(process_list)
+    round_robin(process_list)
     priority_non_preemptive(process_list)
 
     print("Resultados dos algoritmos 1, 3 e 5 gravados em resultados.txt")
