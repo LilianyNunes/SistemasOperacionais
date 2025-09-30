@@ -1,0 +1,78 @@
+--- 1. FCFS (First-Come, First-Served) ---
+Ordem de Execução: P1 -> P2 -> P3 -> P4
+
+ID      Chegada   Burst   Início  Fim     Espera  Retorno   Prior.  
+P1      0         8       0       8       0       8         3       
+P2      1         4       8       12      7       11        1       
+P3      2         9       12      21      10      19        4       
+P4      3         5       21      26      18      23        2       
+
+Tempo Médio de Espera: 8.75
+Tempo Médio de Retorno: 15.25
+---------------------------------------------------------------------------
+
+--- 2. SJF (Shortest Job First - Não-Preemptivo) ---
+Ordem de Execução: P1 -> P2 -> P4 -> P3
+
+ID      Chegada   Burst   Início  Fim     Espera  Retorno   Prior.  
+P1      0         8       0       8       0       8         3       
+P2      1         4       8       12      7       11        1       
+P3      2         9       17      26      15      24        4       
+P4      3         5       12      17      9       14        2       
+
+Tempo Médio de Espera: 7.75
+Tempo Médio de Retorno: 14.25
+---------------------------------------------------------------------------
+
+--- 3. Round Robin (RR) [Quantum=3] ---
+Linha do Tempo de Execução: P1 -> P2 -> P3 -> P4 -> P1 -> P2 -> P3 -> P4 -> P1 -> P3
+
+ID      Chegada   Burst   Fim     Espera  Retorno   Prior.  
+P1      0         8       23      15      23        3       
+P2      1         4       16      11      15        1       
+P3      2         9       26      15      24        4       
+P4      3         5       21      13      18        2       
+
+Tempo Médio de Espera: 13.50
+Tempo Médio de Retorno: 20.00
+---------------------------------------------------------------------------
+
+--- 4. Escalonamento por Prioridade (Não-Preemptivo) ---
+Ordem de Execução: P1 -> P2 -> P4 -> P3
+
+ID      Chegada   Burst   Início  Fim     Espera  Retorno   Prior.  
+P1      0         8       0       8       0       8         3       
+P2      1         4       8       12      7       11        1       
+P3      2         9       17      26      15      24        4       
+P4      3         5       12      17      9       14        2       
+
+Tempo Médio de Espera: 7.75
+Tempo Médio de Retorno: 14.25
+---------------------------------------------------------------------------
+
+--- 5. Prioridade com Múltiplas Filas [Quantum=3] ---
+Linha do Tempo de Execução: P1 -> P2 -> P4 -> P1 -> P3
+
+ID      Chegada   Burst   Fim     Espera  Retorno   Prior.  
+P1      0         8       17      9       17        3       
+P2      1         4       7       2       6         1       
+P3      2         9       26      15      24        4       
+P4      3         5       12      4       9         2       
+
+Tempo Médio de Espera: 7.50
+Tempo Médio de Retorno: 14.00
+---------------------------------------------------------------------------
+
+--- 6. Escalonamento por Loteria (Não-Preemptivo) ---
+Ordem de Execução: P1 -> P4 -> P2 -> P3
+
+ID      Chegada   Burst   Início  Fim     Espera  Retorno   Tickets 
+P1      0         8       0       8       0       8         20      
+P2      1         4       13      17      12      16        80      
+P3      2         9       17      26      15      24        10      
+P4      3         5       8       13      5       10        40      
+
+Tempo Médio de Espera: 8.00
+Tempo Médio de Retorno: 14.50
+---------------------------------------------------------------------------
+
