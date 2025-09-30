@@ -66,7 +66,7 @@ def round_robin(processes, quantum=2, file_path="resultados.txt"):
     avg_turn = sum(r["turnaround"] for r in results) / n
 
     with open(file_path, "a", encoding="utf-8") as f:
-        f.write("Round Robin (Quantum = " + str(quantum) + ")\n")
+        f.write("--- 3 .Round Robin (Quantum = " + str(quantum) + ") ---\n")
         f.write("Ordem de Execução (linha do tempo): " + " -> ".join(order) + "\n\n")
         f.write(f"{'Processo':<10}{'Chegada':<10}{'Burst':<8}{'Fim':<8}"
                 f"{'Espera':<8}{'Retorno':<10}{'Prior.':<8}\n")

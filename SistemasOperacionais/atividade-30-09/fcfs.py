@@ -38,7 +38,7 @@ def fcfs(processes, file_path="resultados.txt"):
 
     # Escreve no arquivo de saída
     with open(file_path, "a", encoding="utf-8") as f:
-        f.write("FCFS (First-Come, First-Served)\n")
+        f.write("--- 1 .FCFS (First-Come, First-Served) ---\n")
         f.write("Ordem de Execução: " + " -> ".join(order) + "\n\n")
         f.write(f"{'Processo':<10}{'Chegada':<10}{'Burst':<8}{'Início':<8}{'Fim':<8}"
                 f"{'Espera':<8}{'Retorno':<10}{'Prior.':<8}\n")
