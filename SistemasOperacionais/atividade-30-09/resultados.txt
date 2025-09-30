@@ -12,20 +12,6 @@ Tempo Médio de Espera: 5.80
 Tempo Médio de Retorno: 11.80
 -------
 
-FCFS (First-Come, First-Served)
-Ordem de Execução: P1 -> P2 -> P3 -> P4 -> P5
-
-Processo  Chegada   Burst   Início  Fim     Espera  Retorno   Prior.  
-P1        0         5       0       5       0       5         2       
-P2        2         3       5       8       3       6         1       
-P3        4         8       8       16      4       12        3       
-P4        5         6       16      22      11      17        2       
-P5        11        8       22      30      11      19        1       
-
-Tempo Médio de Espera: 5.80
-Tempo Médio de Retorno: 11.80
--------
-
 Round Robin (Quantum = 2)
 Ordem de Execução (linha do tempo): P1 -> P1 -> P2 -> P2 -> P1 -> P1 -> P3 -> P3 -> P2 -> P4 -> P4 -> P1 -> P3 -> P3 -> P5 -> P5 -> P4 -> P4 -> P3 -> P3 -> P5 -> P5 -> P4 -> P4 -> P3 -> P3 -> P5 -> P5 -> P5 -> P5
 
