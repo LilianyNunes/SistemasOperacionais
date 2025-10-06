@@ -69,16 +69,16 @@ Tempo Médio de Retorno: 11.40
 -------
 
 --- 6. Escalonamento por Loteria (Não-Preemptivo) ---
-Ordem de Execução: P1 -> P4 -> P2 -> P5 -> P3
+Ordem de Execução: P1 -> P2 -> P4 -> P5 -> P3
 
 ID      Chegada   Burst   Início  Fim     Espera  Retorno   Tickets 
 P1      0         5       0       5       0       5         10      
-P2      2         3       11      14      9       12        20      
+P2      2         3       5       8       3       6         20      
 P3      4         8       22      30      18      26        5       
-P4      5         6       5       11      0       6         15      
+P4      5         6       8       14      3       9         15      
 P5      11        8       14      22      3       11        25      
 
-Tempo Médio de Espera: 6.00
-Tempo Médio de Retorno: 12.00
+Tempo Médio de Espera: 5.40
+Tempo Médio de Retorno: 11.40
 ---------------------------------------------------------------------------
 

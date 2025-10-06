@@ -1,0 +1,348 @@
+
+==============================
+SIMULAÇÃO: FIRST FIT
+==============================
+
+PASSO 1: Processo P6 tentou alocar 3 blocos.
+Estado da memória: 11100000000000000000000000000000
+PASSO 2: Processo P7 tentou alocar 5 blocos.
+Estado da memória: 11111111000000000000000000000000
+PASSO 3: Processo P2 tentou alocar 4 blocos.
+Estado da memória: 11111111111100000000000000000000
+PASSO 4: Processo P8 tentou alocar 8 blocos.
+Estado da memória: 11111111111111111111000000000000
+PASSO 5: Processo P10 tentou alocar 6 blocos.
+Estado da memória: 11111111111111111111111111000000
+PASSO 6: Processo P3 tentou alocar 2 blocos.
+Estado da memória: 11111111111111111111111111110000
+PASSO 7: Processo P5 tentou alocar 8 blocos.
+Estado da memória: 11111111111111111111111111110000
+PASSO 8: Processo P9 tentou alocar 2 blocos.
+Estado da memória: 11111111111111111111111111111100
+PASSO 9: Processo P2 desalocado.
+Estado da memória: 11111111000011111111111111111100
+PASSO 10: Processo P4 tentou alocar 5 blocos.
+Estado da memória: 11111111000011111111111111111100
+PASSO 11: Processo P5 tentou alocar 8 blocos.
+Estado da memória: 11111111000011111111111111111100
+PASSO 12: Processo P1 tentou alocar 5 blocos.
+Estado da memória: 11111111000011111111111111111100
+PASSO 13: Processo P10 desalocado.
+Estado da memória: 11111111000011111111000000111100
+PASSO 14: Processo P6 desalocado.
+Estado da memória: 00011111000011111111000000111100
+PASSO 15: Processo P5 tentou alocar 8 blocos.
+Estado da memória: 00011111000011111111000000111100
+PASSO 16: Processo P8 desalocado.
+Estado da memória: 00011111000000000000000000111100
+PASSO 17: Processo P2 tentou alocar 4 blocos.
+Estado da memória: 00011111111100000000000000111100
+PASSO 18: Processo P2 desalocado.
+Estado da memória: 00011111000000000000000000111100
+PASSO 19: Processo P5 tentou alocar 8 blocos.
+Estado da memória: 00011111111111110000000000111100
+PASSO 20: Processo P9 desalocado.
+Estado da memória: 00011111111111110000000000110000
+PASSO 21: Processo P4 tentou alocar 5 blocos.
+Estado da memória: 00011111111111111111100000110000
+PASSO 22: Processo P4 desalocado.
+Estado da memória: 00011111111111110000000000110000
+PASSO 23: Processo P6 tentou alocar 3 blocos.
+Estado da memória: 11111111111111110000000000110000
+PASSO 24: Processo P9 tentou alocar 2 blocos.
+Estado da memória: 11111111111111111100000000110000
+PASSO 25: Processo P7 desalocado.
+Estado da memória: 11100000111111111100000000110000
+PASSO 26: Processo P8 tentou alocar 8 blocos.
+Estado da memória: 11100000111111111111111111110000
+PASSO 27: Processo P10 tentou alocar 6 blocos.
+Estado da memória: 11100000111111111111111111110000
+PASSO 28: Processo P7 tentou alocar 5 blocos.
+Estado da memória: 11111111111111111111111111110000
+PASSO 29: Processo P4 tentou alocar 5 blocos.
+Estado da memória: 11111111111111111111111111110000
+PASSO 30: Processo P1 tentou alocar 5 blocos.
+Estado da memória: 11111111111111111111111111110000
+
+Fragmentação externa (blocos inutilizáveis): 0
+==============================
+
+
+
+==============================
+SIMULAÇÃO: NEXT FIT
+==============================
+
+PASSO 1: Processo P3 tentou alocar 2 blocos.
+Estado da memória: 11000000000000000000000000000000
+PASSO 2: Processo P6 tentou alocar 3 blocos.
+Estado da memória: 11111000000000000000000000000000
+PASSO 3: Processo P9 tentou alocar 2 blocos.
+Estado da memória: 11111110000000000000000000000000
+PASSO 4: Processo P9 desalocado.
+Estado da memória: 11111000000000000000000000000000
+PASSO 5: Processo P7 tentou alocar 5 blocos.
+Estado da memória: 11111001111100000000000000000000
+PASSO 6: Processo P9 tentou alocar 2 blocos.
+Estado da memória: 11111001111111000000000000000000
+PASSO 7: Processo P7 desalocado.
+Estado da memória: 11111000000011000000000000000000
+PASSO 8: Processo P6 desalocado.
+Estado da memória: 11000000000011000000000000000000
+PASSO 9: Processo P10 tentou alocar 6 blocos.
+Estado da memória: 11000000000011111111000000000000
+PASSO 10: Processo P9 desalocado.
+Estado da memória: 11000000000000111111000000000000
+PASSO 11: Processo P2 tentou alocar 4 blocos.
+Estado da memória: 11000000000000111111111100000000
+PASSO 12: Processo P6 tentou alocar 3 blocos.
+Estado da memória: 11000000000000111111111111100000
+PASSO 13: Processo P4 tentou alocar 5 blocos.
+Estado da memória: 11000000000000111111111111111111
+PASSO 14: Processo P2 desalocado.
+Estado da memória: 11000000000000111111000011111111
+PASSO 15: Processo P2 tentou alocar 4 blocos.
+Estado da memória: 11111100000000111111000011111111
+PASSO 16: Processo P7 tentou alocar 5 blocos.
+Estado da memória: 11111111111000111111000011111111
+PASSO 17: Processo P2 desalocado.
+Estado da memória: 11000011111000111111000011111111
+PASSO 18: Processo P5 tentou alocar 8 blocos.
+Estado da memória: 11000011111000111111000011111111
+PASSO 19: Processo P2 tentou alocar 4 blocos.
+Estado da memória: 11000011111000111111111111111111
+PASSO 20: Processo P2 desalocado.
+Estado da memória: 11000011111000111111000011111111
+PASSO 21: Processo P8 tentou alocar 8 blocos.
+Estado da memória: 11000011111000111111000011111111
+PASSO 22: Processo P1 tentou alocar 5 blocos.
+Estado da memória: 11000011111000111111000011111111
+PASSO 23: Processo P9 tentou alocar 2 blocos.
+Estado da memória: 11110011111000111111000011111111
+PASSO 24: Processo P6 desalocado.
+Estado da memória: 11110011111000111111000000011111
+PASSO 25: Processo P3 desalocado.
+Estado da memória: 00110011111000111111000000011111
+PASSO 26: Processo P10 desalocado.
+Estado da memória: 00110011111000000000000000011111
+PASSO 27: Processo P9 desalocado.
+Estado da memória: 00000011111000000000000000011111
+PASSO 28: Processo P2 tentou alocar 4 blocos.
+Estado da memória: 00000011111111100000000000011111
+PASSO 29: Processo P6 tentou alocar 3 blocos.
+Estado da memória: 00000011111111111100000000011111
+PASSO 30: Processo P3 tentou alocar 2 blocos.
+Estado da memória: 00000011111111111111000000011111
+
+Fragmentação externa (blocos inutilizáveis): 0
+==============================
+
+
+
+==============================
+SIMULAÇÃO: BEST FIT
+==============================
+
+PASSO 1: Processo P3 tentou alocar 2 blocos.
+Estado da memória: 11000000000000000000000000000000
+PASSO 2: Processo P10 tentou alocar 6 blocos.
+Estado da memória: 11111111000000000000000000000000
+PASSO 3: Processo P7 tentou alocar 5 blocos.
+Estado da memória: 11111111111110000000000000000000
+PASSO 4: Processo P2 tentou alocar 4 blocos.
+Estado da memória: 11111111111111111000000000000000
+PASSO 5: Processo P1 tentou alocar 5 blocos.
+Estado da memória: 11111111111111111111110000000000
+PASSO 6: Processo P10 desalocado.
+Estado da memória: 11000000111111111111110000000000
+PASSO 7: Processo P8 tentou alocar 8 blocos.
+Estado da memória: 11000000111111111111111111111100
+PASSO 8: Processo P8 desalocado.
+Estado da memória: 11000000111111111111110000000000
+PASSO 9: Processo P10 tentou alocar 6 blocos.
+Estado da memória: 11111111111111111111110000000000
+PASSO 10: Processo P4 tentou alocar 5 blocos.
+Estado da memória: 11111111111111111111111111100000
+PASSO 11: Processo P4 desalocado.
+Estado da memória: 11111111111111111111110000000000
+PASSO 12: Processo P2 desalocado.
+Estado da memória: 11111111111110000111110000000000
+PASSO 13: Processo P7 desalocado.
+Estado da memória: 11111111000000000111110000000000
+PASSO 14: Processo P1 desalocado.
+Estado da memória: 11111111000000000000000000000000
+PASSO 15: Processo P3 desalocado.
+Estado da memória: 00111111000000000000000000000000
+PASSO 16: Processo P2 tentou alocar 4 blocos.
+Estado da memória: 00111111111100000000000000000000
+PASSO 17: Processo P9 tentou alocar 2 blocos.
+Estado da memória: 11111111111100000000000000000000
+PASSO 18: Processo P2 desalocado.
+Estado da memória: 11111111000000000000000000000000
+PASSO 19: Processo P7 tentou alocar 5 blocos.
+Estado da memória: 11111111111110000000000000000000
+PASSO 20: Processo P6 tentou alocar 3 blocos.
+Estado da memória: 11111111111111110000000000000000
+PASSO 21: Processo P3 tentou alocar 2 blocos.
+Estado da memória: 11111111111111111100000000000000
+PASSO 22: Processo P9 desalocado.
+Estado da memória: 00111111111111111100000000000000
+PASSO 23: Processo P3 desalocado.
+Estado da memória: 00111111111111110000000000000000
+PASSO 24: Processo P4 tentou alocar 5 blocos.
+Estado da memória: 00111111111111111111100000000000
+PASSO 25: Processo P9 tentou alocar 2 blocos.
+Estado da memória: 11111111111111111111100000000000
+PASSO 26: Processo P3 tentou alocar 2 blocos.
+Estado da memória: 11111111111111111111111000000000
+PASSO 27: Processo P7 desalocado.
+Estado da memória: 11111111000001111111111000000000
+PASSO 28: Processo P7 tentou alocar 5 blocos.
+Estado da memória: 11111111111111111111111000000000
+PASSO 29: Processo P8 tentou alocar 8 blocos.
+Estado da memória: 11111111111111111111111111111110
+PASSO 30: Processo P2 tentou alocar 4 blocos.
+Estado da memória: 11111111111111111111111111111110
+
+Fragmentação externa (blocos inutilizáveis): 1
+==============================
+
+
+
+==============================
+SIMULAÇÃO: WORST FIT
+==============================
+
+PASSO 1: Processo P4 tentou alocar 5 blocos.
+Estado da memória: 11111000000000000000000000000000
+PASSO 2: Processo P7 tentou alocar 5 blocos.
+Estado da memória: 11111111110000000000000000000000
+PASSO 3: Processo P6 tentou alocar 3 blocos.
+Estado da memória: 11111111111110000000000000000000
+PASSO 4: Processo P3 tentou alocar 2 blocos.
+Estado da memória: 11111111111111100000000000000000
+PASSO 5: Processo P10 tentou alocar 6 blocos.
+Estado da memória: 11111111111111111111100000000000
+PASSO 6: Processo P5 tentou alocar 8 blocos.
+Estado da memória: 11111111111111111111111111111000
+PASSO 7: Processo P1 tentou alocar 5 blocos.
+Estado da memória: 11111111111111111111111111111000
+PASSO 8: Processo P1 tentou alocar 5 blocos.
+Estado da memória: 11111111111111111111111111111000
+PASSO 9: Processo P8 tentou alocar 8 blocos.
+Estado da memória: 11111111111111111111111111111000
+PASSO 10: Processo P3 desalocado.
+Estado da memória: 11111111111110011111111111111000
+PASSO 11: Processo P2 tentou alocar 4 blocos.
+Estado da memória: 11111111111110011111111111111000
+PASSO 12: Processo P10 desalocado.
+Estado da memória: 11111111111110000000011111111000
+PASSO 13: Processo P9 tentou alocar 2 blocos.
+Estado da memória: 11111111111111100000011111111000
+PASSO 14: Processo P3 tentou alocar 2 blocos.
+Estado da memória: 11111111111111111000011111111000
+PASSO 15: Processo P4 desalocado.
+Estado da memória: 00000111111111111000011111111000
+PASSO 16: Processo P10 tentou alocar 6 blocos.
+Estado da memória: 00000111111111111000011111111000
+PASSO 17: Processo P1 tentou alocar 5 blocos.
+Estado da memória: 11111111111111111000011111111000
+PASSO 18: Processo P9 desalocado.
+Estado da memória: 11111111111110011000011111111000
+PASSO 19: Processo P8 tentou alocar 8 blocos.
+Estado da memória: 11111111111110011000011111111000
+PASSO 20: Processo P8 tentou alocar 8 blocos.
+Estado da memória: 11111111111110011000011111111000
+PASSO 21: Processo P8 tentou alocar 8 blocos.
+Estado da memória: 11111111111110011000011111111000
+PASSO 22: Processo P4 tentou alocar 5 blocos.
+Estado da memória: 11111111111110011000011111111000
+PASSO 23: Processo P5 desalocado.
+Estado da memória: 11111111111110011000000000000000
+PASSO 24: Processo P8 tentou alocar 8 blocos.
+Estado da memória: 11111111111110011111111110000000
+PASSO 25: Processo P1 desalocado.
+Estado da memória: 00000111111110011111111110000000
+PASSO 26: Processo P4 tentou alocar 5 blocos.
+Estado da memória: 00000111111110011111111111111100
+PASSO 27: Processo P10 tentou alocar 6 blocos.
+Estado da memória: 00000111111110011111111111111100
+PASSO 28: Processo P2 tentou alocar 4 blocos.
+Estado da memória: 11110111111110011111111111111100
+PASSO 29: Processo P2 desalocado.
+Estado da memória: 00000111111110011111111111111100
+PASSO 30: Processo P4 desalocado.
+Estado da memória: 00000111111110011111111110000000
+
+Fragmentação externa (blocos inutilizáveis): 0
+==============================
+
+
+
+==============================
+SIMULAÇÃO: QUICK FIT
+==============================
+
+PASSO 1: Processo P8 tentou alocar 8 blocos.
+Estado da memória: 11111111000000000000000000000000
+PASSO 2: Processo P2 tentou alocar 4 blocos.
+Estado da memória: 11111111111100000000000000000000
+PASSO 3: Processo P10 tentou alocar 6 blocos.
+Estado da memória: 11111111111111111100000000000000
+PASSO 4: Processo P5 tentou alocar 8 blocos.
+Estado da memória: 11111111111111111111111111000000
+PASSO 5: Processo P5 desalocado.
+Estado da memória: 11111111111111111100000000000000
+PASSO 6: Processo P7 tentou alocar 5 blocos.
+Estado da memória: 11111111111111111111111000000000
+PASSO 7: Processo P10 desalocado.
+Estado da memória: 11111111111100000011111000000000
+PASSO 8: Processo P1 tentou alocar 5 blocos.
+Estado da memória: 11111111111111111011111000000000
+PASSO 9: Processo P4 tentou alocar 5 blocos.
+Estado da memória: 11111111111111111011111111110000
+PASSO 10: Processo P1 desalocado.
+Estado da memória: 11111111111100000011111111110000
+PASSO 11: Processo P3 tentou alocar 2 blocos.
+Estado da memória: 11111111111100000011111111111100
+PASSO 12: Processo P5 tentou alocar 8 blocos.
+Estado da memória: 11111111111100000011111111111100
+PASSO 13: Processo P1 tentou alocar 5 blocos.
+Estado da memória: 11111111111111111011111111111100
+PASSO 14: Processo P1 desalocado.
+Estado da memória: 11111111111100000011111111111100
+PASSO 15: Processo P1 tentou alocar 5 blocos.
+Estado da memória: 11111111111111111011111111111100
+PASSO 16: Processo P4 desalocado.
+Estado da memória: 11111111111111111011111000001100
+PASSO 17: Processo P4 tentou alocar 5 blocos.
+Estado da memória: 11111111111111111011111111111100
+PASSO 18: Processo P1 desalocado.
+Estado da memória: 11111111111100000011111111111100
+PASSO 19: Processo P6 tentou alocar 3 blocos.
+Estado da memória: 11111111111111100011111111111100
+PASSO 20: Processo P6 desalocado.
+Estado da memória: 11111111111100000011111111111100
+PASSO 21: Processo P9 tentou alocar 2 blocos.
+Estado da memória: 11111111111100000011111111111111
+PASSO 22: Processo P1 tentou alocar 5 blocos.
+Estado da memória: 11111111111111111011111111111111
+PASSO 23: Processo P5 tentou alocar 8 blocos.
+Estado da memória: 11111111111111111011111111111111
+PASSO 24: Processo P3 desalocado.
+Estado da memória: 11111111111111111011111111110011
+PASSO 25: Processo P6 tentou alocar 3 blocos.
+Estado da memória: 11111111111111111011111111110011
+PASSO 26: Processo P2 desalocado.
+Estado da memória: 11111111000011111011111111110011
+PASSO 27: Processo P3 tentou alocar 2 blocos.
+Estado da memória: 11111111000011111011111111111111
+PASSO 28: Processo P6 tentou alocar 3 blocos.
+Estado da memória: 11111111111011111011111111111111
+PASSO 29: Processo P4 desalocado.
+Estado da memória: 11111111111011111011111000001111
+PASSO 30: Processo P3 desalocado.
+Estado da memória: 11111111111011111011111000000011
+
+Fragmentação externa (blocos inutilizáveis): 2
+==============================

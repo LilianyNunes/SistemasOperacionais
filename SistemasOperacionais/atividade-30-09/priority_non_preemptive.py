@@ -1,5 +1,5 @@
 # ----------------------------------------------------------------------
-# Algoritmo 5 - Prioridade (não-preemptiva) - também chamado Multiple Queues
+# Algoritmo 5 - Prioridade (não-preemptiva) - também chamado Multiple Queues (Escalonamento por Múltiplas Filas)
 # ----------------------------------------------------------------------
 def priority_non_preemptive(processes, file_path="resultados.txt"):
     n = len(processes)
